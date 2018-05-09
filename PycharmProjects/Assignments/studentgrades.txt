@@ -1,0 +1,9 @@
+Tom 88
+Sue 90
+Ray 66
+Lori 71
+Bruce 43
+Tim 99
+Marcia 100
+Bill 55
+Max 9
