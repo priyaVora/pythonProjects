@@ -44,7 +44,6 @@ class wordGame(object):
                     validCheck = True
                     lastTwo = generate_last_two_chars(player_one_input)
                     check = "" + player_one_input[0] + player_one_input[1]
-                    print("Check: " + str(check))
                     if self.previous == check:
                         validCheck = True
                     else:
@@ -54,10 +53,7 @@ class wordGame(object):
                             sys.stderr.write(" That word does not start with the last 2 letters of the previous word. Try again.\n")
                     if validCheck == True:
                         count = count + 1
-                        print("Count: " + str(count))
-                        print("Word: " + player_one_input)
                         self.words_used.append(player_one_input.lower())
-                        print("Next Valid last two chars: " + str(lastTwo))
                         self.previous = str(lastTwo)
             else:
                 player_two_input = input("\n" + player_two.name + ": Please enter your word.\n")
@@ -84,10 +80,7 @@ class wordGame(object):
 
                     if validCheck == True:
                         count = count + 1
-                        print("Count: " + str(count))
-                        print("Word: " + player_two_input)
                         self.words_used.append(player_two_input.lower())
-                        print("Next Valid last two chars: " + str(lastTwo))
                         self.previous = str(lastTwo)
 
 
