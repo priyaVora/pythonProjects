@@ -14,6 +14,7 @@ def generate_last_two_chars(previous_word):
 
 class wordGame(object):
     words_used = []
+    previous = "";
     def __init__(self,  player_one, player_two):
         self.player_one  = player_one
         self.player_two = player_two
@@ -29,55 +30,57 @@ class wordGame(object):
         count = 0
         while not not_loop:
             if count % 2 ==0:
-                player_one_input = input(player_one.name + ": Please enter your word.")
+                player_one_input = input("\n" + player_one.name + ": Please enter your word.\n")
                 if player_one_input == str(0):
+                    print("Game Over. Goodbye!")
                     break
                 elif len(player_one_input) < 3:
-                    sys.stderr.write('\n\nWord is too short!\n')
+                    sys.stderr.write(' All words must be at least 3 letters long. Try again.\n')
                     not_loop = False
                 elif self.words_used.__contains__(player_one_input.lower()):
-                    sys.stderr.write("\n\nWhoops! Can't repeat words!\n")
+                    sys.stderr.write(" That word has already been used. Try again.\n")
                     not_loop = False
                 else:
                     validCheck = True
                     lastTwo = generate_last_two_chars(player_one_input)
                     check = "" + player_one_input[0] + player_one_input[1]
                     print("Check: " + str(check))
-                    if lastTwo == check:
+                    if self.previous == check:
                         validCheck = True
                     else:
                         if count != 0:
                             validCheck = False
                             not_loop = False
-                            sys.stderr.write("\n\nStart of the word doesn't match previous word.Try Again!\n")
-                        if validCheck == True:
-                            count = count + 1
-                            print("Count: " + str(count))
-                            print("Word: " + player_one_input)
-                            self.words_used.append(player_one_input.lower())
-                            print("Next Valid last two chars: " + str(lastTwo))
+                            sys.stderr.write(" That word does not start with the last 2 letters of the previous word. Try again.\n")
+                    if validCheck == True:
+                        count = count + 1
+                        print("Count: " + str(count))
+                        print("Word: " + player_one_input)
+                        self.words_used.append(player_one_input.lower())
+                        print("Next Valid last two chars: " + str(lastTwo))
+                        self.previous = str(lastTwo)
             else:
-                player_two_input = input(player_two.name + ": Please enter your word.")
+                player_two_input = input("\n" + player_two.name + ": Please enter your word.\n")
                 if player_two_input == str(0):
+                    print("Game Over.Goodbye!")
                     break
                 elif len(player_two_input) < 3:
-                    sys.stderr.write('\n\nWord is too short!\n')
+                    sys.stderr.write(' All words must be at least 3 letters long. Try again.\n')
                     not_loop = False
                 elif self.words_used.__contains__(player_two_input.lower()):
-                    sys.stderr.write("\n\nWhoops! Can't repeat words!\n")
+                    sys.stderr.write(" That word has already been used. Try again.\n")
                     not_loop = False
                 else:
                     validCheck = True
                     lastTwo = generate_last_two_chars(player_two_input)
                     check = "" + player_two_input[0] + player_two_input[1]
                     print("Check: " + str(check))
-                    print("Last Two: " + lastTwo)
-                    if lastTwo == check:
+                    if self.previous == check:
                         validCheck = True
                     else:
                         validCheck = False
                         not_loop = False
-                        sys.stderr.write("\n\nStart of the word doesn't match previous word.Try Again!\n")
+                        sys.stderr.write(" That word does not start with the last 2 letters of the previous word. Try again.\n")
 
                     if validCheck == True:
                         count = count + 1
@@ -85,6 +88,7 @@ class wordGame(object):
                         print("Word: " + player_two_input)
                         self.words_used.append(player_two_input.lower())
                         print("Next Valid last two chars: " + str(lastTwo))
+                        self.previous = str(lastTwo)
 
 
 
