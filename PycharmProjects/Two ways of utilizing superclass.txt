@@ -1,0 +1,17 @@
+from model.item import Item
+
+class Event(Item):
+    def __init__(self):
+        Item.__init__(self, "Pencil", "You use this to write with it",0.567)
+
+class ChildB(Item):
+    def __init__(self):
+        super(ChildB, self).__init__("Pen", "You can also use this to write with it",0.467)
+
+Event()
+ChildB()
+
+------------------------------Personal notes
+model - package
+item is the python file name
+Item is the class inside the item file
