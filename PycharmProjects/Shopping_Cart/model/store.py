@@ -57,20 +57,5 @@ class Store(object):
             return total_price
 
 
-items = {}
 
-
-store = Store(items)
-anthony = Item("Anthony", "Friend", 100.0)
-priya = Item("Priya", "Friend", 100.0)
-shreya = Item("Shreya", "Friend", 100.0)
-ankita = Item("Ankita", "Friend", 100.0)
-Nainesh = Item("Nainesh", "Friend", 800.0)
-store.add_cart(anthony,2)
-store.add_cart(priya,3)
-store.add_cart(shreya,5)
-store.add_cart(ankita,10)
-
-
-print(store.total_price())
 
