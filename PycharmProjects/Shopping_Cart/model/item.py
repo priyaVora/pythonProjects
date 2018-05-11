@@ -1,11 +1,11 @@
 
 
 class Item(object):
-    """This Item Class represents each item being sold im a specific store.
+    """This Item2 Class represents each item being sold im a specific store.
     Each item holds three different information about itself. An item has a name, description
     and price allocated to itself."""
     def __init__(self, name, description, price):
-        """This Item Class represents each item being sold im a specific store.
+        """This Item1 Class represents each item being sold im a specific store.
         Each item holds three different information about itself. An item has a name, description
         and price allocated to itself."""
 
@@ -24,6 +24,5 @@ class Item(object):
         return item_representation
 
 
-#print(help(Item.__init__))
 
 

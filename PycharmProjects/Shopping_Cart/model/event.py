@@ -15,4 +15,3 @@ class Event(Item):
         return item_representation
 
 Event("Cup", "You use to drink in", 0.345, "5/4/3").__str__()
-print(help(Item.__init__))

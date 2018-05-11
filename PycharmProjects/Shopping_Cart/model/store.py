@@ -6,9 +6,9 @@ class Store(object):
            Also it provides functionality to check how items in the cart, and check the total price of item(s)."""
     def __init__(self,items):
         """This Store Class represents each event taking place in a given time.
-                   Each event holds one nformation about itself. A Store holds list of items and shopping cart
-                   A Store provides functionality to add items to cart, to check if a given item is in a cart.
-                   Also it provides functionality to check how items in the cart, and check the total price of item(s)."""
+        Each event holds one nformation about itself. A Store holds list of items and shopping cart
+        A Store provides functionality to add items to cart, to check if a given item is in a cart.
+        Also it provides functionality to check how items in the cart, and check the total price of item(s)."""
         self.items = items
         self.__shopping_cart = {}
 
@@ -23,7 +23,6 @@ class Store(object):
            return False
 
     def get_cart_items(self):
-        print("All items will be returned")
         list = []
         for each_item in self.__shopping_cart:
             list.append(each_item)
@@ -35,7 +34,6 @@ class Store(object):
             return quantity
         else:
             return 0
-        print(l)
 
     def total_price(self, *option):
 
