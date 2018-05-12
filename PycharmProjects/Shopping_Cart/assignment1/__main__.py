@@ -100,13 +100,12 @@ def add_item_to_cart(store):
     while not loop:
         try:
             user_input = int(input("\nPlease enter a numerical value corresponding to the menu selection: \n"))
-            loop = True
+
             size = len(store.items)
 
             if user_input <= size:
                 adding_item = item_dict[user_input]
-                print("Item is : ")
-                print(adding_item)
+
                 loop = True
 
                 second_loop = False
@@ -123,7 +122,6 @@ def add_item_to_cart(store):
                     except ValueError:
                         second_loop = False
             else:
-                print("")
                 loop = False
 
         except ValueError:
@@ -170,8 +168,13 @@ def remove_item_from_cart(store):
             loop = False
 
 
-def checkout():
-    print("Check Out!")
+def checkout(store):
+    count = 1
+    print("Items for checkout: \n")
+    for each_item_in_cart in store.get_cart_items():
+        print(str(count) + ".", end="", flush="")
+        print(each_item_in_cart)
+        print("")
 
 
 def main(args=None):
@@ -181,11 +184,11 @@ def main(args=None):
         args = sys.argv[1:]
         list = parse_items_from_file("C:/Users/Priya/pythonProjects/PycharmProjects/Shopping_Cart/sample_file.txt")
         store = Store(list)
-        #store_menu(store)
-        print(" ")
-        remove_item_from_cart(store)
-        #add_item_to_cart(store)
-        # print_items_in_store(store)
+
+        add_item_to_cart(store)
+        checkout(store)
+
+
 
 
 if __name__ == "__main__":
