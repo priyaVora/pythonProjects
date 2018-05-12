@@ -35,8 +35,11 @@ def parse_items_from_file(file_path):
 
 
 def print_items_in_store(store):
+    count = 1
     for each_item in store.items:
+        print(str(count) + ". ", end="", flush=True)
         print(str(each_item))
+        count = count + 1
 
 
 
@@ -194,8 +197,8 @@ def main(args=None):
         #print_items_in_store(store)
 
         #store_menu(store)
-        print_items_in_cart(store)
-        
+        """print_items_in_cart(store)
+
         priya = Item("Priya", "Friend", 3)
         nainesh = Item("nainesh", "Friend", 3)
         ankita = Item("ankita", "Friend", 3)
@@ -203,7 +206,8 @@ def main(args=None):
         store.add_cart(nainesh, 10)
         store.add_cart(ankita, 20)
 
-        print_items_in_cart(store)
+        print_items_in_cart(store)"""
+        print_items_in_store(store)
 
 
 
