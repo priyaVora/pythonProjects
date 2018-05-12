@@ -42,7 +42,7 @@ def print_items_in_store(store):
 
 def print_items_in_cart(store):
     for each_item in store.get_cart_items():
-        print_items_in_store(each_item)
+        print(each_item)
 
 
 def store_menu(store):
@@ -87,8 +87,72 @@ def store_menu(store):
                 loop = False
 
 
-def add_item_to_cart():
-    print("Add items to cart")
+def add_item_to_cart(store):
+    count = 1
+    item_dict = {}
+    for each_item in store.items:
+        print(str(count) + ".", end= "", flush=True)
+        print(str(each_item)+ ".", end="", flush=True)
+        item_dict[count] = each_item
+        print("")
+        count = count + 1
+    loop = False
+    while not loop:
+        try:
+            user_input = int(input("\nPlease enter a numerical value corresponding to the menu selection: \n"))
+            loop = True
+            size = len(store.items)
+
+            if user_input <= size:
+                adding_item = item_dict[user_input]
+                print("Item is : ")
+                print(adding_item)
+                loop = True
+
+                second_loop = False
+                while not second_loop:
+                    try:
+                        second_input = int(input("\nPlease enter quantity of item: " + str(user_input)))
+                        store.add_cart(adding_item, second_input)
+                        second_loop = True
+                       # print_items_in_cart(store)
+                       # store.add_cart(adding_item, 5)
+                        #print_items_in_cart(store)
+
+                        #print(store.get_cart_item_quantity(adding_item))
+                    except ValueError:
+                        second_loop = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            else:
+                print("")
+                loop = False
+
+        except ValueError:
+            sys.stderr.write(" Invalid Input...")
+            loop = False
 
 
 def remove_item_from_cart():
@@ -106,8 +170,9 @@ def main(args=None):
         args = sys.argv[1:]
         list = parse_items_from_file("C:/Users/Priya/pythonProjects/PycharmProjects/Shopping_Cart/sample_file.txt")
         store = Store(list)
-        store_menu(store)
+        #store_menu(store)
         print(" ")
+        add_item_to_cart(store)
         # print_items_in_store(store)
 
 
