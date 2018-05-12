@@ -122,30 +122,6 @@ def add_item_to_cart(store):
                         #print(store.get_cart_item_quantity(adding_item))
                     except ValueError:
                         second_loop = False
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             else:
                 print("")
                 loop = False
@@ -155,8 +131,43 @@ def add_item_to_cart(store):
             loop = False
 
 
-def remove_item_from_cart():
-    print("Remove item from cart")
+def remove_item_from_cart(store):
+    count = 1
+    item_dict = {}
+    for each_item in store.items:
+        print(str(count) + ".", end="", flush=True)
+        print(str(each_item) + ".", end="", flush=True)
+        item_dict[count] = each_item
+        print("")
+        count = count + 1
+    loop = False
+    while not loop:
+        try:
+            user_input = int(input("\nPlease enter a numerical value corresponding to the menu selection: \n"))
+            loop = True
+            size = len(store.items)
+
+            if user_input <= size:
+                removing_item = item_dict[user_input]
+                print("Item is : ")
+                print(removing_item)
+                loop = True
+
+                second_loop = False
+                while not second_loop:
+                    try:
+                        second_input = int(input("\n Enter a quantity (or to type 0 for “all”) to remove " + str(user_input)))
+                        store.remove_from_cart(removing_item, int(user_input))
+                        second_loop = True
+                    except ValueError:
+                        second_loop = False
+            else:
+                print("")
+                loop = False
+
+        except ValueError:
+            sys.stderr.write(" Invalid Input...")
+            loop = False
 
 
 def checkout():
@@ -172,7 +183,8 @@ def main(args=None):
         store = Store(list)
         #store_menu(store)
         print(" ")
-        add_item_to_cart(store)
+        remove_item_from_cart(store)
+        #add_item_to_cart(store)
         # print_items_in_store(store)
 
 

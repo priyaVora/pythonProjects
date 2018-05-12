@@ -35,6 +35,9 @@ class Store(object):
         else:
             return 0
 
+    def remove_from_cart(self, item, *quantity):
+        print("Remove Item")
+
     def total_price(self, *option):
 
         if option:
