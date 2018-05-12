@@ -186,6 +186,9 @@ def checkout(store):
         print(str(count) + ".", end="", flush="")
         print(each_item_in_cart)
         print("")
+        count = count + 1
+    print(store.total_price())
+
 
 
 def main(args=None):
@@ -208,16 +211,20 @@ def main(args=None):
         store.add_cart(ankita, 20)
 
         print_items_in_cart(store)
-        #print_items_in_store(store)
 
-        #store_menu(store)
 
-    store.remove_from_cart(priya, 2)
-    store.remove_from_cart(nainesh, 2)
-    store.remove_from_cart(ankita, 2)
+        print("Add item: ")
+
+        add_item_to_cart(store)
+
+
+
+
+    print("Check out : ")
+    checkout(store)
+
+    print("Items: ")
     print_items_in_cart(store)
-
-
 
 
 if __name__ == "__main__":
