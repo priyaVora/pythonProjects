@@ -185,8 +185,7 @@ def main(args=None):
         list = parse_items_from_file("C:/Users/Priya/pythonProjects/PycharmProjects/Shopping_Cart/sample_file.txt")
         store = Store(list)
 
-        add_item_to_cart(store)
-        checkout(store)
+        print_items_in_store(store)
 
 
 

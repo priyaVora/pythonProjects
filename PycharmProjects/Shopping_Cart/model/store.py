@@ -51,20 +51,20 @@ class Store(object):
         if quantity:
             quantity_to_remove = quantity[0]
             if quantity_to_remove == 0:
-                del store.__shopping_cart[item]
-            elif quantity_to_remove <= store.get_cart_item_quantity(item):
-                value = store.get_cart_item_quantity(item) - quantity_to_remove
-                store.__shopping_cart[item] = value
-            elif quantity_to_remove > store.get_cart_item_quantity(item):
-                store.__shopping_cart[item] = 0
+                del self.__shopping_cart[item]
+            elif quantity_to_remove <= self.get_cart_item_quantity(item):
+                value = self.get_cart_item_quantity(item) - quantity_to_remove
+                self.__shopping_cart[item] = value
+            elif quantity_to_remove > self.get_cart_item_quantity(item):
+                self.__shopping_cart[item] = 0
 
-            if store.get_cart_item_quantity(item) == 0:
-                del store.__shopping_cart[item]
-            print("Quantity of item: " + str(item.name) + ": " + str(store.get_cart_item_quantity(item)))
+            if self.get_cart_item_quantity(item) == 0:
+                del self.__shopping_cart[item]
+            print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
             print("Quantity to remove: " + str(quantity_to_remove))
         else:
-            del store.__shopping_cart[item]
-            print("Quantity of item: " + str(item.name) + ": " + str(store.get_cart_item_quantity(item)))
+            del self.__shopping_cart[item]
+            print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
 
 
     def total_price(self, *option):
@@ -85,30 +85,4 @@ class Store(object):
                 price_of_current_item = each_item.price * quantity_of_item
                 total_price += price_of_current_item
             return total_price
-
-items = []
-priya = Item("Priya", "Friend", 3)
-ankita = Item("Ankita", "Friend", 3)
-nainesh = Item("Nainesh", "Friend", 3)
-
-items.append(priya)
-items.append(ankita)
-items.append(nainesh)
-
-store = Store(items)
-print("Item quantity in the cart for priya: " + str(store.get_cart_item_quantity(priya)))
-store.add_cart(priya,3)
-print("Item quantity in the cart for priya: " + str(store.get_cart_item_quantity(priya)))
-store.add_cart(priya,5)
-print("Item quantity in the cart for priya: " + str(store.get_cart_item_quantity(priya)))
-store.add_cart(nainesh,5)
-print("Item quantity in the cart for nainesh: " + str(store.get_cart_item_quantity(nainesh)))
-store.add_cart(nainesh,5)
-print("Item quantity in the cart for nainesh: " + str(store.get_cart_item_quantity(nainesh)))
-
-
-print("-----------")
-store.remove_from_cart(priya, 83)
-
-
 
