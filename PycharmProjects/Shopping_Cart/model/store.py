@@ -13,8 +13,19 @@ class Store(object):
         self.__shopping_cart = {}
 
     def add_cart(self, item, quantity):
+
+        print("Does item contain in the cart already?-" + str(self.is_in_cart(item)))
         if self.is_in_cart(item) == False:
+            value = None
+        else:
+            value = self.__shopping_cart.get(item)
+        if self.is_in_cart(item) == False:
+            value = self.__shopping_cart.get(item)
+            print("Value Before " + str(value))
             self.__shopping_cart[item] = quantity
+        elif self.is_in_cart(item) == True:
+            self.__shopping_cart[item] = quantity + value
+            print("Quantity of item now: " + str(self.get_cart_item_quantity(item)))
 
     def is_in_cart(self, item):
        if item in self.__shopping_cart:
@@ -57,6 +68,24 @@ class Store(object):
                 total_price += price_of_current_item
             return total_price
 
+items = []
+priya = Item("Priya", "Friend", 3)
+ankita = Item("Ankita", "Friend", 3)
+nainesh = Item("Nainesh", "Friend", 3)
 
+items.append(priya)
+items.append(ankita)
+items.append(nainesh)
+
+store = Store(items)
+print("Item quantity in the cart for priya: " + str(store.get_cart_item_quantity(priya)))
+store.add_cart(priya,3)
+print("Item quantity in the cart for priya: " + str(store.get_cart_item_quantity(priya)))
+store.add_cart(priya,5)
+print("Item quantity in the cart for priya: " + str(store.get_cart_item_quantity(priya)))
+store.add_cart(nainesh,5)
+print("Item quantity in the cart for nainesh: " + str(store.get_cart_item_quantity(nainesh)))
+store.add_cart(nainesh,5)
+print("Item quantity in the cart for nainesh: " + str(store.get_cart_item_quantity(nainesh)))
 
 
