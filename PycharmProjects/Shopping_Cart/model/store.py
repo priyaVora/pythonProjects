@@ -58,6 +58,8 @@ class Store(object):
             elif quantity_to_remove > store.get_cart_item_quantity(item):
                 store.__shopping_cart[item] = 0
 
+            if store.get_cart_item_quantity(item) == 0:
+                del store.__shopping_cart[item]
             print("Quantity of item: " + str(item.name) + ": " + str(store.get_cart_item_quantity(item)))
             print("Quantity to remove: " + str(quantity_to_remove))
         else:
@@ -106,6 +108,7 @@ print("Item quantity in the cart for nainesh: " + str(store.get_cart_item_quanti
 
 
 print("-----------")
-store.remove_from_cart(priya, 7)
+store.remove_from_cart(priya, 83)
+
 
 
