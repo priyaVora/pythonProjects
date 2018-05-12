@@ -12,7 +12,8 @@ class Event(Item):
         super(Event, self).__init__(name, description,price)
     def __str__(self):
         item_representation = "$%.2f :: %s :: %s :: %s" % (self.price, self.date,self.name, self.description)
-        return item_representation
+        return str(item_representation)
 
+    __repr__ = __str__
 
 

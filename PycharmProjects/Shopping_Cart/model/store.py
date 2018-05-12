@@ -14,18 +14,18 @@ class Store(object):
 
     def add_cart(self, item, quantity):
 
-        print("Does item contain in the cart already?-" + str(self.is_in_cart(item)))
+       # print("Does item contain in the cart already?-" + str(self.is_in_cart(item)))
         if self.is_in_cart(item) == False:
             value = None
         else:
             value = self.__shopping_cart.get(item)
         if self.is_in_cart(item) == False:
             value = self.__shopping_cart.get(item)
-            print("Value Before " + str(value))
+            #print("Value Before " + str(value))
             self.__shopping_cart[item] = quantity
         elif self.is_in_cart(item) == True:
             self.__shopping_cart[item] = quantity + value
-            print("Quantity of item now: " + str(self.get_cart_item_quantity(item)))
+            #print("Quantity of item now: " + str(self.get_cart_item_quantity(item)))
 
     def is_in_cart(self, item):
        if item in self.__shopping_cart:
@@ -60,11 +60,11 @@ class Store(object):
 
             if self.get_cart_item_quantity(item) == 0:
                 del self.__shopping_cart[item]
-            print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
-            print("Quantity to remove: " + str(quantity_to_remove))
+            #print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
+            #print("Quantity to remove: " + str(quantity_to_remove))
         else:
             del self.__shopping_cart[item]
-            print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
+            #print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
 
 
     def total_price(self, *option):

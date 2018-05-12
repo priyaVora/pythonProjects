@@ -20,8 +20,9 @@ class Item(object):
 
     def __str__(self):
         item_representation = "$%.2f :: %s :: %s" % (self.price, self.name, self.description)
-        return item_representation
+        return str(item_representation)
 
 
+    __repr__ = __str__
 
 

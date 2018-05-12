@@ -36,13 +36,20 @@ def parse_items_from_file(file_path):
 
 def print_items_in_store(store):
     for each_item in store.items:
-        print(each_item)
+        print(str(each_item))
 
 
 
 def print_items_in_cart(store):
+    count =1
     for each_item in store.get_cart_items():
+        print(str(count) + ". ", end = "", flush=True)
+        print("$" + str(store.total_price(each_item)), end="", flush=True)
+        print(" = " + str(store.get_cart_item_quantity(each_item)) + " X ", end="", flush=True)
         print(each_item)
+        count = count +1
+    if store.get_cart_items() == []:
+        print("Cart is empty.")
 
 
 def store_menu(store):
@@ -61,7 +68,7 @@ def store_menu(store):
         loop = False
         while not loop:
             try:
-                user_input = int(input("\nPlease enter a numerical value corresponding to the menu selection: \n"))
+                user_input = int(input("\nPlease enter a numerical value corresponding to the store menu: \n"))
                 loop = True
 
                 if user_input == 1:
@@ -71,13 +78,13 @@ def store_menu(store):
                     print_items_in_cart(store)
                     ready = False
                 elif user_input == 3:
-                    add_item_to_cart()
+                    add_item_to_cart(store)
                     loop = False
                 elif user_input == 4:
-                    remove_item_from_cart()
+                    remove_item_from_cart(store)
                     ready = False
                 elif user_input == 5:
-                    checkout()
+                    checkout(store)
                     ready = True
                 else:
                     sys.stderr.write(" Please select between 1 to 5...")
@@ -99,7 +106,7 @@ def add_item_to_cart(store):
     loop = False
     while not loop:
         try:
-            user_input = int(input("\nPlease enter a numerical value corresponding to the menu selection: \n"))
+            user_input = int(input("\nPlease enter a numerical value corresponding to the add item options: \n"))
 
             size = len(store.items)
 
@@ -184,8 +191,19 @@ def main(args=None):
         args = sys.argv[1:]
         list = parse_items_from_file("C:/Users/Priya/pythonProjects/PycharmProjects/Shopping_Cart/sample_file.txt")
         store = Store(list)
+        #print_items_in_store(store)
 
-        print_items_in_store(store)
+        #store_menu(store)
+        print_items_in_cart(store)
+        
+        priya = Item("Priya", "Friend", 3)
+        nainesh = Item("nainesh", "Friend", 3)
+        ankita = Item("ankita", "Friend", 3)
+        store.add_cart(priya, 3)
+        store.add_cart(nainesh, 10)
+        store.add_cart(ankita, 20)
+
+        print_items_in_cart(store)
 
 
 
