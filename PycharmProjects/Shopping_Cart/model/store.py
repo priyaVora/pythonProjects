@@ -53,13 +53,16 @@ class Store(object):
             if quantity_to_remove == 0:
                 del self.__shopping_cart[item]
             elif quantity_to_remove <= self.get_cart_item_quantity(item):
+
                 value = self.get_cart_item_quantity(item) - quantity_to_remove
+                print("removed : " + str(quantity_to_remove))
                 self.__shopping_cart[item] = value
             elif quantity_to_remove > self.get_cart_item_quantity(item):
                 self.__shopping_cart[item] = 0
 
             if self.get_cart_item_quantity(item) == 0:
-                del self.__shopping_cart[item]
+                self.__shopping_cart.pop(item, None)
+                #del self.__shopping_cart[item]
             #print("Quantity of item: " + str(item.name) + ": " + str(self.get_cart_item_quantity(item)))
             #print("Quantity to remove: " + str(quantity_to_remove))
         else:

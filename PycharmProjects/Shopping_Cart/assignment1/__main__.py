@@ -165,7 +165,8 @@ def remove_item_from_cart(store):
                 while not second_loop:
                     try:
                         second_input = int(input("\n Enter a quantity (or to type 0 for “all”) to remove " + str(user_input)))
-                        store.remove_from_cart(removing_item, int(user_input))
+                        print("User input : " + str(second_input))
+                        store.remove_from_cart(removing_item, int(second_input))
                         second_loop = True
                     except ValueError:
                         second_loop = False
@@ -197,7 +198,7 @@ def main(args=None):
         #print_items_in_store(store)
 
         #store_menu(store)
-        """print_items_in_cart(store)
+        #print_items_in_cart(store)
 
         priya = Item("Priya", "Friend", 3)
         nainesh = Item("nainesh", "Friend", 3)
@@ -206,8 +207,15 @@ def main(args=None):
         store.add_cart(nainesh, 10)
         store.add_cart(ankita, 20)
 
-        print_items_in_cart(store)"""
-        print_items_in_store(store)
+        print_items_in_cart(store)
+        #print_items_in_store(store)
+
+        #store_menu(store)
+
+    store.remove_from_cart(priya, 2)
+    store.remove_from_cart(nainesh, 2)
+    store.remove_from_cart(ankita, 2)
+    print_items_in_cart(store)
 
 
 
