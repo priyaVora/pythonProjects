@@ -72,7 +72,7 @@ def store_menu(store):
         loop = False
         while not loop:
             try:
-                user_input = int(input("\nPlease enter a numerical value corresponding to the store menu: \n"))
+                user_input = int(input("\nTo Store an Item: specify numerical value corresponding to the store menu: \n"))
                 loop = True
 
                 if user_input == 1:
@@ -110,7 +110,7 @@ def add_item_to_cart(store):
     loop = False
     while not loop:
         try:
-            user_input = int(input("\nPlease enter a numerical value corresponding to the add item options: \n"))
+            user_input = int(input("\nTo Add an Item: specify numerical value corresponding to the add item options: \n"))
 
             size = len(store.items)
 
@@ -122,7 +122,7 @@ def add_item_to_cart(store):
                 second_loop = False
                 while not second_loop:
                     try:
-                        second_input = int(input("\nPlease enter quantity of item: " + str(user_input)))
+                        second_input = int(input("\nEnter quantity of item: " + str(user_input)))
                         store.add_cart(adding_item, second_input)
                         second_loop = True
                        # print_items_in_cart(store)
@@ -152,7 +152,7 @@ def remove_item_from_cart(store):
     loop = False
     while not loop:
         try:
-            user_input = int(input("\nPlease enter a numerical value corresponding to the menu selection: \n"))
+            user_input = int(input("\nTo Remove an Item: Please enter a numerical value corresponding to the remove item options: \n"))
             loop = True
             size = len(store.items)
 
@@ -199,33 +199,8 @@ def main(args=None):
         args = sys.argv[1:]
         list = parse_items_from_file(args[0])
         store = Store(list)
-        #print_items_in_store(store)
 
-        #store_menu(store)
-        #print_items_in_cart(store)
-
-        priya = Item("Priya", "Friend", 3)
-        nainesh = Item("nainesh", "Friend", 3)
-        ankita = Item("ankita", "Friend", 3)
-        store.add_cart(priya, 3)
-        store.add_cart(nainesh, 10)
-        store.add_cart(ankita, 20)
-
-        print_items_in_cart(store)
-
-
-        print("Add item: ")
-
-        add_item_to_cart(store)
-
-
-
-
-    print("Check out : ")
-    checkout(store)
-
-    print("Items: ")
-    print_items_in_cart(store)
+        store_menu(store)
 
 
 if __name__ == "__main__":
