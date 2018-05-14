@@ -1,4 +1,5 @@
 import sys
+sys.path.append("../")
 import datetime
 from model.item import Item
 from model.event import Event
@@ -194,9 +195,9 @@ def checkout(store):
 def main(args=None):
     """The main routine."""
 
-    if (args is None):
+    if args is None:
         args = sys.argv[1:]
-        list = parse_items_from_file("C:/Users/Priya/pythonProjects/PycharmProjects/Shopping_Cart/sample_file.txt")
+        list = parse_items_from_file(args[0])
         store = Store(list)
         #print_items_in_store(store)
 
