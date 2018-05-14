@@ -72,7 +72,7 @@ def store_menu(store):
         loop = False
         while not loop:
             try:
-                user_input = int(input("\nTo Store an Item: specify numerical value corresponding to the store menu: \n"))
+                user_input = int(input("\nStore Menu: specify numerical value corresponding to the store menu: \n"))
                 loop = True
 
                 if user_input == 1:
