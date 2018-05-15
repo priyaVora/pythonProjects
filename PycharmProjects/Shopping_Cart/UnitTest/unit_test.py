@@ -8,6 +8,8 @@ from assignment1.__main__ import add_item_to_cart
 from assignment1.__main__ import remove_item_from_cart
 from assignment1.__main__ import checkout
 
+#c:\users\priya\appdata\local\programs\python\python36\Scripts' : location of faker library
+
 class ShoppingCartTest(unittest.TestCase):
 
     def generate_data(self):
