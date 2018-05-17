@@ -57,15 +57,28 @@ class ShoppingCartTest(unittest.TestCase):
         store = Store(list)
         for each_item in list:
             store.add_cart(each_item, 1)
-        add_item_to_cart(store)
+       # add_item_to_cart(store)
         self.assertEqual(list,store.get_cart_items())
 
 
-    @unittest.skip("Test Later")
+    # @unittest.skip("Test Later")
     def test_remove_item_from_cart(self):
         list = self.generate_data()
+
+
+        expected_remove_list = []
+        for each_item in list:
+            expected_remove_list.append(each_item)
+        toBeRemoved = expected_remove_list[0]
+        del expected_remove_list[0]
         store = Store(list)
-        remove_item_from_cart(store)
+
+        for each_item in list:
+            store.add_cart(each_item, 1)
+        #add_item_to_cart(store)
+        store.remove_from_cart(toBeRemoved)
+       # remove_item_from_cart(store)
+        self.assertEqual(expected_remove_list, store.get_cart_items())
 
     @unittest.skip("Test Later")
     def test_checkout(self):
