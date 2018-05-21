@@ -10,15 +10,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BeautifulSoup$Scraping.coverage" NAME="Scraping Coverage Results" MODIFIED="1526869468491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BeautifulSoup$Scraping.coverage" NAME="Scraping Coverage Results" MODIFIED="1526870294575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Scraping.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scraping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+            <state relative-caret-position="475">
+              <caret line="103" column="141" selection-start-line="103" selection-start-column="141" selection-end-line="103" selection-end-column="141" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -213,8 +213,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scraping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+        <state relative-caret-position="475">
+          <caret line="103" column="141" selection-start-line="103" selection-start-column="141" selection-end-line="103" selection-end-column="141" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

@@ -101,5 +101,5 @@ with open('mycsv.csv', 'w', newline='') as f:
     thewriter.writerow(["Product" ,"Product Name", "Price", "Description", "Product Image"])
     count = 1;
     for each_item in product_list:
-        thewriter.writerow([str(count)+ ".",each_item.product_name,each_item.prices,each_item.descriptions, each_item.images])
+        thewriter.writerow([str(count)+ ".",each_item.product_name,each_item.prices,each_item.descriptions, '=HYPERLINK("' + each_item.images + '")'])
         count = count + 1
