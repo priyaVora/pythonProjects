@@ -16,9 +16,9 @@
     <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_for_unit_test_ShoppingCartTest_test_add_items_to_cart.coverage" NAME="Unittests for unit_test.ShoppingCartTest.test_add_items_to_cart Coverage Results" MODIFIED="1526478929979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
     <SUITE FILE_PATH="coverage/Shopping_Cart$event.coverage" NAME="event Coverage Results" MODIFIED="1526088993835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
     <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_for_unit_test_ShoppingCartTest_test_checkout.coverage" NAME="Unittests for unit_test.ShoppingCartTest.test_checkout Coverage Results" MODIFIED="1526352964702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
-    <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_for_unit_test_ShoppingCartTest.coverage" NAME="Unittests for unit_test.ShoppingCartTest Coverage Results" MODIFIED="1526519494813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
+    <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_for_unit_test_ShoppingCartTest.coverage" NAME="Unittests for unit_test.ShoppingCartTest Coverage Results" MODIFIED="1526937878670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
     <SUITE FILE_PATH="coverage/Shopping_Cart$store.coverage" NAME="store Coverage Results" MODIFIED="1526096876381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
-    <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_in_unit_test_py.coverage" NAME="Unittests in unit_test.py Coverage Results" MODIFIED="1526508474510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
+    <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_in_unit_test_py.coverage" NAME="Unittests in unit_test.py Coverage Results" MODIFIED="1526937851042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
     <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_for_unit_test_ShoppingCartTest_test_print_items_in_cart.coverage" NAME="Unittests for unit_test.ShoppingCartTest.test_print_items_in_cart Coverage Results" MODIFIED="1526518025189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
     <SUITE FILE_PATH="coverage/Shopping_Cart$Unittests_for_unit_test_ShoppingCartTest_test_remove_item_from_cart.coverage" NAME="Unittests for unit_test.ShoppingCartTest.test_remove_item_from_cart Coverage Results" MODIFIED="1526519453176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnitTest" />
     <SUITE FILE_PATH="coverage/Shopping_Cart$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1526509120348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignment1" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="item.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/item.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -43,26 +43,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__main__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__main__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment1/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-305">
+            <state relative-caret-position="63">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#182#1052#0" />
                 <element signature="e#1092#1244#0" />
                 <element signature="e#1284#1682#0" />
-                <element signature="e#1712#3246#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unit_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="unit_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnitTest/unit_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+            <state relative-caret-position="540">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -73,7 +72,7 @@
       <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="10047">
               <caret line="604" selection-start-line="604" selection-end-line="604" />
             </state>
           </provider>
@@ -83,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/model/event.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="55" />
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -120,9 +119,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1294" />
-    <option name="height" value="1398" />
+    <option name="x" value="-9" />
+    <option name="width" value="1298" />
+    <option name="height" value="1399" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -141,6 +140,11 @@
               <item name="Shopping_Cart" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Shopping_Cart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping_Cart" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -151,10 +155,10 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="_i&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DjangoProject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,25 +173,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests for unit_test.ShoppingCartTest">
-    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Shopping_Cart" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignment1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignment1/__main__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="Unittests for unit_test.ShoppingCartTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Shopping_Cart" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,20 +229,34 @@
       <option name="_new_target" value="&quot;unit_test.ShoppingCartTest.test_remove_item_from_cart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
+    <configuration name="Unittests in unit_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Shopping_Cart" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/UnitTest/unit_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
       <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest" />
       <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest.test_print_items_in_store" />
       <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest.test_remove_item_from_cart" />
-      <item itemvalue="Python.__main__" />
       <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest.test_print_items_in_cart" />
+      <item itemvalue="Python tests.Unittests in unit_test.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest" />
+        <item itemvalue="Python tests.Unittests in unit_test.py" />
         <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest.test_remove_item_from_cart" />
         <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest.test_print_items_in_store" />
         <item itemvalue="Python tests.Unittests for unit_test.ShoppingCartTest.test_print_items_in_cart" />
-        <item itemvalue="Python.__main__" />
       </list>
     </recent_temporary>
   </component>
@@ -275,15 +274,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_unit_test_ShoppingCartTest_test_print_items_in_store - 2018.05.16 at 18h 46m 12s.xml">
-      <configuration name="Unittests for unit_test.ShoppingCartTest.test_print_items_in_store" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_unit_test_ShoppingCartTest_test_print_items_in_cart - 2018.05.16 at 18h 46m 23s.xml">
-      <configuration name="Unittests for unit_test.ShoppingCartTest.test_print_items_in_cart" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_unit_test_ShoppingCartTest_test_print_items_in_cart - 2018.05.16 at 18h 46m 37s.xml">
-      <configuration name="Unittests for unit_test.ShoppingCartTest.test_print_items_in_cart" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_unit_test_ShoppingCartTest - 2018.05.16 at 18h 47m 00s.xml">
       <configuration name="Unittests for unit_test.ShoppingCartTest" configurationId="tests" />
     </history-entry>
@@ -305,22 +295,29 @@
     <history-entry file="Unittests_for_unit_test_ShoppingCartTest_test_remove_item_from_cart - 2018.05.16 at 19h 10m 53s.xml">
       <configuration name="Unittests for unit_test.ShoppingCartTest.test_remove_item_from_cart" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_unit_test_ShoppingCartTest - 2018.05.16 at 19h 11m 35s.xml">
+      <configuration name="Unittests for unit_test.ShoppingCartTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unit_test_py - 2018.05.21 at 15h 24m 12s.xml">
+      <configuration name="Unittests in unit_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_unit_test_ShoppingCartTest - 2018.05.21 at 15h 24m 39s.xml">
+      <configuration name="Unittests for unit_test.ShoppingCartTest" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32872656" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32872656" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16113281" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.07324219" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -331,6 +328,7 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +350,92 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assignment1/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#182#1052#0" />
+            <element signature="e#1092#1244#0" />
+            <element signature="e#1284#1682#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10047">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/unit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#182#1052#0" />
+            <element signature="e#1092#1244#0" />
+            <element signature="e#1284#1682#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10047">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/unit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -374,7 +458,6 @@
             <element signature="e#182#1052#0" />
             <element signature="e#1092#1244#0" />
             <element signature="e#1284#1682#0" />
-            <element signature="e#1712#3246#0" />
           </folding>
         </state>
       </provider>
@@ -609,17 +692,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10047">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/event.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="55" />
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -630,32 +720,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+    <entry file="file://$PROJECT_DIR$/UnitTest/unit_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        <state relative-caret-position="540">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment1/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
+        <state relative-caret-position="63">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#182#1052#0" />
             <element signature="e#1092#1244#0" />
             <element signature="e#1284#1682#0" />
-            <element signature="e#1712#3246#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTest/unit_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
